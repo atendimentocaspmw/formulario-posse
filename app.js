@@ -2,6 +2,7 @@
 // 1. CONFIGURAÇÃO
 // ================================================================
 const APPS_SCRIPT_URL = "SUA_URL_DO_APPS_SCRIPT_AQUI";
+const APP_VERSION = "1.1.0";
 
 const form = document.getElementById('posseForm');
 const messageNode = document.getElementById('message');
@@ -50,10 +51,8 @@ form.addEventListener('submit', async (event) => {
         docOrgao: formData.get('docOrgao'),
         docUf: formData.get('docUf'),
         docEmissao: formData.get('docEmissao'),
-        servidorCedido: formData.get('servidorCedido') || "Não",
-        atoCessaoPagina: formData.get('atoCessaoPagina') || "N/A",
-        encargosFinanceiros: formData.get('encargosFinanceiros') || "N/A",
-        geradoEm: new Date().toLocaleString('pt-BR')
+        geradoEm: new Date().toLocaleString('pt-BR'),
+        appVersion: APP_VERSION
     };
 
     try {

@@ -1,4 +1,6 @@
 # formulario-posse
+Versão 1.1.0
+
 Formulário de posse de servidores nomeados do município de Palmas/TO.
 
 ## Sistema de Posse CAS - Instruções de Uso
